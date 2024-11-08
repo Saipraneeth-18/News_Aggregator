@@ -27,7 +27,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/news')
+mongoose.connect('mongodb+srv://sudharsanuppala:YQhW0wKjBDOneN0u@cluster0.qx0hv.mongodb.net/news-aggregator-db?retryWrites=true&w=majority&appName=Cluster0')
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.log('Failed to connect to MongoDB', err));
 
